@@ -3,11 +3,11 @@ using namespace std;
 class Studentinfo
 {
 	private:
-		char name[];
-		char clas[];
+		char name[25];
+		char clas[4];
 		int rollno;
 		int DOB;
-		char bloodgroup[];
+		char bloodgroup[2];
 		int contactno;
 		int telno;
 		double DLN;
@@ -15,11 +15,11 @@ class Studentinfo
 		void get();
 		void show();
 };
-void Studentinfo::get(void)
+void Studentinfo::get()
 {
 	cout<<"enter the name="<<endl;
 	cin>>name;
-	cout<<"enter the clas="<<endl;
+	cout<<"enter the class="<<endl;
 	cin>>clas;
 	cout<<"enter the rollno="<<endl;
 	cin>>rollno;
@@ -35,9 +35,9 @@ void Studentinfo::get(void)
 	cin>>DLN;
 		
 }
-void Studentinfo::show(void)
+void Studentinfo::show()
 {
-	cout<<"name"<<name<<endl<<"clas"<<clas<<endl<<"rollno"<<rollno<<endl<<"DOB"<<DOB<<endl<<"bloodgroup"<<bloodgroup<<endl<<"contactno"<<contactno<<endl<<"telno"<<telno<<
+	cout<<"name"<<name<<endl<<"class"<<clas<<endl<<"rollno"<<rollno<<endl<<"DOB"<<DOB<<endl<<"bloodgroup"<<bloodgroup<<endl<<"contactno"<<contactno<<endl<<"telno"<<telno<<
 	endl<<"DLN"<<DLN<<endl;
 	
 }
@@ -47,4 +47,3 @@ int main()
 	s.get();
 	s.show();
 }
-
